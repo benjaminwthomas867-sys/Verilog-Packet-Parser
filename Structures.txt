@@ -1,0 +1,10 @@
+Header:
+		Offset		Length
+Session		0		10		
+Seq number	10		8
+Message count	18		2
+
+Message:
+			Offset		Length
+Message Length		variable	2
+Message data		Variable	val above
