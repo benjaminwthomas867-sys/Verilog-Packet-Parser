@@ -1,10 +1,26 @@
 Header:
 		Offset		Length
 Session		0		10		
-Seq number	10		8
+Seq number	10		8			Offset means distance from the start of the pack!!!!!!!!!!!!!
 Message count	18		2
 
 Message:
 			Offset		Length
 Message Length		variable	2
 Message data		Variable	val above
+
+message always starts 20 bytes after start of the packet.
+
+
+
+Session		1-10
+Seq number	11-18
+message count	19-20
+msg_length	2
+msg_data
+
+
+
+msg_data_count - counting down the number of bytes in each message.
+msg_count - counting down the number of bytes
+clock_count - counting the number of clock cycles.
